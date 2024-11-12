@@ -1,0 +1,233 @@
+/* Загальні стилі */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e8f1f5; /* Світло-блакитний фон, що нагадує зимову атмосферу */
+  color: #333; /* Темний текст для контрасту */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Шапка */
+header {
+  background-color: #b30000; /* Яскраво-червоний колір для новорічного настрою */
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .logo h1 {
+  font-family: "Georgia", serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header .menu li {
+  margin: 0 1rem;
+}
+
+header .menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+header .menu li a:hover {
+  color: #ffd700; /* Золотий відтінок для підсвічування */
+}
+
+/* Hero Section */
+.hero {
+  background: url("img/snowy-background.jpg") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #ff6600; /* Теплий помаранчевий для кнопок */
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+  background-color: #e65c00;
+}
+
+/* Розділ Країни */
+.countries {
+  padding: 3rem 0;
+  background-color: #fffaf0; /* Відтінок слонової кістки для тепла */
+  text-align: center;
+}
+
+.countries h2 {
+  color: #b30000;
+  font-size: 2.5rem;
+}
+
+.country-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.country-item {
+  background-color: #fdf5e6; /* Легкий кремовий відтінок */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.country-item:hover {
+  transform: scale(1.05);
+}
+
+.country-item img {
+  max-width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.country-item h3 {
+  color: #b30000;
+  margin: 1rem 0;
+  font-size: 1.8rem;
+}
+
+.country-item p {
+  padding: 0 1rem 1rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Розділ Традиції */
+.traditions {
+  padding: 3rem 0;
+  background-color: #e8f1f5;
+  text-align: center;
+}
+
+.traditions h2 {
+  color: #b30000;
+  font-size: 2.5rem;
+}
+
+.tradition-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.tradition-item {
+  background-color: #fdf5e6;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tradition-item img {
+  max-width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.tradition-item h3 {
+  color: #b30000;
+  margin: 1rem 0;
+}
+
+.tradition-item p {
+  padding: 0 1rem 1rem;
+  color: #333;
+}
+
+/* Фотоальбом */
+.photo-gallery {
+  padding: 3rem 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.photo-gallery h2 {
+  color: #b30000;
+  font-size: 2.5rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  margin-top: 1.5rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: #b30000;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+footer a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #fff;
+}
